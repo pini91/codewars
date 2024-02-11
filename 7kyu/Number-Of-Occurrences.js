@@ -22,4 +22,4 @@ function numberOfOccurrences(element) {
     //OR return this.filter(el => el===element).length
 }
 
-numberOfOccurrences(0)
+numberOfOccurrences([0, 1, 2, 2, 3])
