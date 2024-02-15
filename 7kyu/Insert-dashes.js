@@ -1,0 +1,41 @@
+// Write a function insert_dash(num) / insertDash(num) / InsertDash(int num) that will insert dashes ('-') between each two odd digits in num. For example: if num is 454793 the output should be 4547-9-3.
+
+// Note that the number will always be non-negative (>= 0).
+
+function insertDash(num) {
+
+var prev='', 
+newstring='';
+
+num = num.toString();
+
+for (var i=0; i<num.length; i++){
+    parseInt(num[i])%2 == 0 ? current='even' : current='odd';
+    if (current=='odd' && prev=='odd'){
+        newstring=newstring + '-' + num[i];
+        prev='odd';
+    } else {
+        newstring=newstring + num[i];
+         prev=current;
+    }
+}
+
+return newstring; 
+
+//OR
+// return num.toString().replace(/[13579](?=[13579])/g, "$&-");
+
+//OR
+// num = num.toString().split('')
+  
+// for(let i = 0; i < num.length; i++){
+//   if (num[i]%2 > 0 && num[i +1]%2 > 0){
+//     num[i] = num[i] + '-'
+//   }
+// }
+
+// return num.join('')
+
+}
+
+ console.log(insertDash(454793))
