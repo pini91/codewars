@@ -6,7 +6,7 @@
 // ['hello', 'world', 'this', 'is', 'great']  =>  'hello world this is great'
 
 function smash (words) {
-    let words1 = words.join(" ").trim()
-    return words1
+    let words1 = words.join(" ").trim();
+    return words1;
  };
 
