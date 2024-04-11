@@ -7,9 +7,9 @@
 
 function areYouPlayingBanjo(name) {
     if (name.charAt(0).toLowerCase() === "r"){
-        console.log(`${name} plays banjo`)}
+        console.log(`${name} plays banjo`)};
     else{
-        console.log(`${name} does not play banjo `)
+        console.log(`${name} does not play banjo `);
     }
   }
 
