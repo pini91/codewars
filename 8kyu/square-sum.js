@@ -2,6 +2,6 @@
 // For example, for [1, 2, 2] it should return 9 because 
 
 function squareSum(numbers){
-    return numbers.reduce((accumulator, element)=> accumulator + element**2, 0)
+    return numbers.reduce((accumulator, element)=> accumulator + element**2, 0);
     
 }
