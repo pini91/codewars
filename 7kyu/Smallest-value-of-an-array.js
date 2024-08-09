@@ -13,6 +13,8 @@ function min(arr,  toReturn) {
         let min=  Math.min(...arr)
         return arr.indexOf(min)
     }
+
+    //OR return x.reduce((acc, cur) => typeof cur === 'number'? acc + cur : acc - Number(cur),0)
 }
 
   console.log(min([1,2,3,4,5], 'index'))
