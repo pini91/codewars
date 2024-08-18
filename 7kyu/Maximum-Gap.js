@@ -23,7 +23,7 @@ function maxGap (numbers){
     for(let i =0; i<nums.length; i++){
         result.push(nums[i+1]-nums[i]) // This because is in a sorted way if is ascending it would be nums[i]-nums[i+1]
     }
-    result = result.slice(0, result.length-1)
+    result = result.slice(0, result.length-1) //To remove the NaN
     return Math.max(...result)
    
     
