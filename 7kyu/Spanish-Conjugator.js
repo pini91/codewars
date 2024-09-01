@@ -130,4 +130,4 @@ return { [verb]: dic[verb.slice(-2)].map(e=> verb.slice(0,-2)+e) };
 
   }
 
-  console.log(conjugate('caminar'))
+  console.log(conjugate('correr'))
