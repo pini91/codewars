@@ -16,12 +16,13 @@ var position = 0
 var coins = 0
 
 function main () {
-  getCoins()
-  move()
-  printStatus()
-  combat()
-  rolDice()
-  attack()
+    rollDice()
+    move()
+    combat()
+    getCoins()
+    buyHealth()
+    printStatus()
+ 
 }
 
-main(getCoins())
+main()
