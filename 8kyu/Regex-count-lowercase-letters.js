@@ -21,6 +21,8 @@ function lowercaseCount(str){
         }
     }
     console.log(result.length)
+
+    // return str.replace(/[^a-z]/g, "").length
 }
 
 lowercaseCount("abcABC123?!@#$%^&*()+")
