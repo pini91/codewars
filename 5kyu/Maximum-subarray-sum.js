@@ -8,17 +8,17 @@
 
 
 var maxSequence = function(arr){
+   
     let max = 0;
     let curr = 0;
     arr.forEach(el =>{
         curr = Math.max(0, curr + el); // 0 to handle the negatives
-        if(max < curr){
+        if(max < curr){ //if maximum is smaller than curr then  then max will be the value of curr
         max = curr
         }
-
     });
     console.log(max)
-   
+  
 }
  
 
