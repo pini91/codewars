@@ -18,7 +18,7 @@ function automorphic(n){
   
   return String(square).slice( - String(n).length, ) == n? "Automorphic": "Not!!"
 
-return String(square).endsWith(n)?"Automorphic": "Not!!"
+// return String(square).endsWith(n)?"Automorphic": "Not!!"
 }
 
 console.log(automorphic(1))
